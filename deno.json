@@ -1,0 +1,8 @@
+{
+	"lock": "deno.lock",
+	"tasks": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview"
+	}
+}
