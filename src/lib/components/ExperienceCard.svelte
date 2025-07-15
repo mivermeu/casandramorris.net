@@ -5,7 +5,7 @@
 	export let horizontal: boolean = false;
 </script>
 
-<div class="card preset-filled border-filled-tertiary border-2">
+<div class="card preset-filled border-tertiary-950-50 border-2">
 	<article class="flex {horizontal ? 'flex-row justify-between' : 'flex-col'} flex-wrap gap-2 p-4">
 		<h3 class="font-bold">{experience_item.title}</h3>
 		<p class="text-sm">
