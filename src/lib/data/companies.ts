@@ -10,7 +10,22 @@ export const cern: Company = {
 	link: 'https://www.cern.ch/'
 };
 
-export const various_hospitality: Company = {
-	name: 'Various',
+export const nikhef: Company = {
+	name: 'Nikhef',
+	link: 'https://www.nikhef.nl/'
+};
+
+export const hobbit_cafe: Company = {
+	name: 'The Hobbit Cafe',
 	link: 'https://hobbitcafehtx.com'
+};
+
+export const clara: Company = {
+	name: 'Clara',
+	link: 'https://www.clara-nyc.com'
+};
+
+export const noi_due_carne: Company = {
+	name: 'Noi Due Carne',
+	link: 'https://www.noiduecarne.com'
 };
