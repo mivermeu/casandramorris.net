@@ -23,17 +23,10 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Load font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap"
-		rel="stylesheet"
-	/>
-
 	<title>Casandra's Portfolio</title>
 </svelte:head>
 
-<main class="bg-background text-foreground mx-auto max-w-3xl space-y-12 p-8 font-serif">
+<main class="bg-background text-foreground mx-auto max-w-3xl space-y-12 p-8 font-[Lora]">
 	<!-- Theme switcher -->
 	<div class="flex justify-end">
 		<button class="btn btn-primary overflow-hidden" on:click={toggleTheme} transition:fade>
