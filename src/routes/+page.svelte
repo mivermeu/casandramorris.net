@@ -4,7 +4,7 @@
 	import { skills } from '$lib/data/skills';
 	import { theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
-	import { Sun, Moon } from '@lucide/svelte';
+	import { Sun, Moon, Github, Linkedin, Mail } from '@lucide/svelte';
 	import { fade, scale } from 'svelte/transition';
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
 
@@ -26,9 +26,25 @@
 	<title>Casandra's Portfolio</title>
 </svelte:head>
 
-<main class="bg-background text-foreground mx-auto max-w-3xl space-y-12 p-8 font-[Lora]">
-	<!-- Theme switcher -->
-	<div class="flex justify-end">
+<main class="bg-background text-foreground mx-auto max-w-4xl space-y-12 p-8 font-[Lora]">
+	<!-- Top bar -->
+	<div class="flex justify-between">
+		<!-- Socials -->
+		<div class="flex flex-row items-center gap-2">
+			<a
+				class="hover:text-secondary-950-50"
+				href="https://www.linkedin.com/in/casandra-morris-673593198"
+			>
+				<Linkedin />
+			</a>
+			<a class="hover:text-secondary-950-50" href="https://github.com/casandramorris">
+				<Github />
+			</a>
+			<a class="hover:text-secondary-950-50" href="mailto:info@casandramorris.com">
+				<Mail />
+			</a>
+		</div>
+		<!-- Theme switcher -->
 		<button class="btn btn-primary overflow-hidden" on:click={toggleTheme} transition:fade>
 			{#if currentTheme === 'dark'}
 				<span in:scale={{ duration: 150 }} out:scale={{ duration: 150 }}>
