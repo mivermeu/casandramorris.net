@@ -18,9 +18,9 @@ export const experience: Experience[] = [
 	},
 	{
 		title: 'Manager',
-		companies: [hobbit_cafe, clara],
+		companies: [hobbit_cafe],
 		startDate: new Date(2020, 1, 1),
-		endDate: null,
+		endDate: new Date(2023, 1, 1),
 		description:
 			'Master of menus, moods, and making sure the place didn’t burn down (figuratively).'
 	},
