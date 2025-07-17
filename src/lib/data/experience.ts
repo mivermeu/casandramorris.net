@@ -11,17 +11,25 @@ export const experience: Experience[] = [
 	{
 		title: 'Particle Physicist',
 		companies: [university_of_houston, cern],
-		startDate: new Date('2017-01-01'),
-		endDate: new Date('2022-01-01'),
+		startDate: new Date(2018, 1, 1),
+		endDate: new Date(2024, 1, 1),
 		description:
-			'Constructed a liquid argon purity monitor, performed data analysis on large particle data sets.'
+			'Designed precision instrumentation to keep liquid argon pure and used data science to uncover what collided inside it.'
+	},
+	{
+		title: 'Manager',
+		companies: [hobbit_cafe, clara],
+		startDate: new Date(2020, 1, 1),
+		endDate: null,
+		description:
+			'Master of menus, moods, and making sure the place didn’t burn down (figuratively).'
 	},
 	{
 		title: 'Server',
 		companies: [hobbit_cafe, clara, noi_due_carne],
-		startDate: new Date('2010-01-01'),
+		startDate: new Date(2010, 1, 1),
 		endDate: null,
 		description:
-			'Originally a way to pay for college, this line of work has made me a customer service expert.'
+			'Welcomed guests with warmth and ensured smooth, enjoyable dining experiences from start to finish.'
 	}
 ];

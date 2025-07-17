@@ -12,15 +12,15 @@ export const education: Experience[] = [
 	{
 		title: 'Master of Science in Physics',
 		companies: [university_of_houston, cern, nikhef],
-		startDate: new Date(2019, 8),
-		endDate: new Date(2022, 5),
+		startDate: new Date(2015, 8),
+		endDate: new Date(2018, 5),
 		description: ''
 	},
 	{
 		title: 'Bachelor of Science in Physics',
 		companies: [university_of_houston],
-		startDate: new Date(2015, 8),
-		endDate: new Date(2019, 5),
+		startDate: new Date(2010, 8),
+		endDate: new Date(2015, 5),
 		description: ''
 	}
 ];
