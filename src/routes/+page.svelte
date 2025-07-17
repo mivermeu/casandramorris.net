@@ -37,7 +37,7 @@
 			>
 				<Linkedin />
 			</a>
-			<a class="hover:text-secondary-950-50" href="https://github.com/casandramorris">
+			<a class="hover:text-secondary-950-50" href="https://github.com/chmorris4">
 				<Github />
 			</a>
 			<a class="hover:text-secondary-950-50" href="mailto:info@casandramorris.com">
