@@ -94,7 +94,7 @@
 		<h2 class="mb-4 text-2xl font-semibold">Things I've learned</h2>
 		<div class="flex flex-col gap-4">
 			{#each education as education_item (education_item)}
-				<ExperienceCard experience_item={education_item} horizontal />
+				<ExperienceCard experience_item={education_item} />
 			{/each}
 		</div>
 	</section>
