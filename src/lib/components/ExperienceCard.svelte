@@ -1,13 +1,14 @@
 <script lang="ts">
 	import type { Experience } from '$lib/types';
+	import Link from '$lib/components/Link.svelte';
 
 	export let experience_item: Experience;
 </script>
 
-<div class="card preset-filled border-tertiary-950-50 border-2">
+<div class="card border-secondary-50-950 preset-filled border-1">
 	<article class="flex flex-col flex-wrap gap-2 p-4">
 		<div class="flex justify-between">
-			<h3 class="font-bold">{experience_item.title}</h3>
+			<h3 class="text-secondary-50-950 font-bold">{experience_item.title}</h3>
 			<p class="text-sm">
 				{experience_item.startDate.getFullYear()} - {experience_item.endDate
 					? experience_item.endDate.getFullYear()
@@ -17,9 +18,7 @@
 		{#if experience_item.companies.length > 0}
 			<div class="flex gap-2">
 				{#each experience_item.companies as company (company.name)}
-					<div class="badge bg-tertiary-950-50 card-hover">
-						<a href={company.link} target="_blank">{company.name}</a>
-					</div>
+					<Link href={company.link}>{company.name}</Link>
 				{/each}
 			</div>
 		{/if}

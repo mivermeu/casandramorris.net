@@ -7,6 +7,7 @@
 	import { Sun, Moon, Github, Linkedin, Mail } from '@lucide/svelte';
 	import { fade, scale } from 'svelte/transition';
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
+	import Section from '$lib/components/Section.svelte';
 
 	let currentTheme: 'light' | 'dark' = 'light';
 
@@ -26,7 +27,7 @@
 	<title>Casandra's Portfolio</title>
 </svelte:head>
 
-<main class="bg-background text-foreground mx-auto max-w-4xl space-y-12 p-8 font-[Lora]">
+<main class="mx-auto max-w-4xl space-y-16 p-8 font-[Lora]">
 	<!-- Top bar -->
 	<div class="flex justify-between">
 		<!-- Socials -->
@@ -60,16 +61,15 @@
 
 	<!-- Title section -->
 	<header class="space-y-2 text-center">
-		<h1 class="text-secondary-950-50 text-4xl font-bold">Casandra Morris</h1>
-		<p class="text-lg">Literally just a girl</p>
+		<h1 class="text-primary-950-50 text-4xl font-bold">Casandra Morris</h1>
+		<!-- <p class="text-lg">Literally just a girl</p> -->
 	</header>
 
 	<!-- Skills section -->
-	<section>
-		<h2 class="mb-4 text-2xl font-semibold">Things I can do</h2>
+	<Section title="Things I can do">
 		<div class="flex flex-wrap items-center gap-2">
 			{#each skills as skill (skill.name)}
-				<span class="badge preset-filled">
+				<span class="badge preset-filled border-secondary-50-950 border-1">
 					{#if skill.icon}
 						<svelte:component this={skill.icon} size={14} />
 					{/if}
@@ -77,30 +77,29 @@
 				</span>
 			{/each}
 		</div>
-	</section>
+	</Section>
 
 	<!-- Experience section -->
-	<section>
-		<h2 class="mb-4 text-2xl font-semibold">Things I've done</h2>
+	<Section title="Things I've done">
 		<div class="grid gap-6 md:grid-cols-2">
 			{#each experience as experience_item (experience_item.title)}
 				<ExperienceCard {experience_item} />
 			{/each}
 		</div>
-	</section>
+	</Section>
 
 	<!-- Education section -->
-	<section>
-		<h2 class="mb-4 text-2xl font-semibold">Things I've learned</h2>
-		<div class="flex flex-col gap-4">
+	<Section title="Things I've learned">
+		<div class="grid gap-6 md:grid-cols-2">
 			{#each education as education_item (education_item)}
 				<ExperienceCard experience_item={education_item} />
 			{/each}
 		</div>
-	</section>
+	</Section>
 
 	<!-- Copyright section -->
-	<footer class="border-t pt-4 text-center text-sm">
+	<footer class="flex flex-col gap-4 text-center text-sm">
+		<hr class="hr border-primary-950-50" />
 		<p>&copy; {new Date().getFullYear()} Casandra Morris</p>
 	</footer>
 </main>
