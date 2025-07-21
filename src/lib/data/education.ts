@@ -3,10 +3,10 @@ import { cern, nikhef, university_of_houston } from '$lib/data/companies';
 
 export const education: Experience[] = [
 	{
-		title: 'IBM Data Science Course',
+		title: 'IBM Data Science Certification',
 		companies: [],
-		startDate: new Date(2022, 8),
-		endDate: new Date(2023, 5),
+		startDate: new Date(2024, 11),
+		endDate: new Date(2025, 1),
 		description: ''
 	},
 	{
@@ -19,7 +19,7 @@ export const education: Experience[] = [
 	{
 		title: 'Bachelor of Science in Physics',
 		companies: [university_of_houston],
-		startDate: new Date(2010, 8),
+		startDate: new Date(2011, 8),
 		endDate: new Date(2015, 5),
 		description: ''
 	}
