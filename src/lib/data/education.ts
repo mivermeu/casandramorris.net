@@ -5,8 +5,8 @@ export const education: Experience[] = [
 	{
 		title: 'IBM Data Science Certification',
 		companies: [],
-		startDate: new Date(2024, 11),
-		endDate: new Date(2025, 1),
+		startDate: new Date(2025, 1),
+		endDate: new Date(2026, 1),
 		description: ''
 	},
 	{

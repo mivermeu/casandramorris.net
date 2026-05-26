@@ -32,18 +32,15 @@
 	<div class="flex justify-between">
 		<!-- Socials -->
 		<div class="flex flex-row items-center gap-2">
-			<a
-				class="hover:text-secondary-950-50"
-				href="https://www.linkedin.com/in/casandra-morris-673593198"
-			>
+			<a class="hover:text-secondary-950-50" href="https://www.linkedin.com/in/casandra-h-morris">
 				<Linkedin />
 			</a>
-			<a class="hover:text-secondary-950-50" href="https://github.com/chmorris4">
+			<!-- <a class="hover:text-secondary-950-50" href="https://github.com/chmorris4">
 				<Github />
 			</a>
 			<a class="hover:text-secondary-950-50" href="mailto:info@casandramorris.com">
 				<Mail />
-			</a>
+			</a> -->
 		</div>
 		<!-- Theme switcher -->
 		<button class="btn btn-primary overflow-hidden" on:click={toggleTheme} transition:fade>
